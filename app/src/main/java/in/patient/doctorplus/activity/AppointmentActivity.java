@@ -34,7 +34,6 @@ public class AppointmentActivity extends BaseActivity {
     private ImageView noData;
     private AlertDialog progressDialog;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
