@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_cross"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_baseline_close_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img_cross"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_cross"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Select Date"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/today"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Today"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/tomorrow"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@android:color/transparent"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Tomorrow"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/calender"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/radio_button_selector"
+                android:button="@android:color/transparent"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:drawablePadding="-10dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Select Date"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/selectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_cross"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="02 January 2020"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_book_appointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppins_semibold"
+            android:padding="12dp"
+            android:text="Next"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

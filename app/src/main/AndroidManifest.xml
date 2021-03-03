@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.patient.doctorplus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/favicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/favicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoctorPlus">
+        <activity android:name=".activity.PrescriptionActivity"></activity>
+        <activity android:name=".activity.FeedBackActivity" />
+        <activity android:name=".activity.VideoCallActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.MedicalRecordActivity" />
+        <activity android:name=".activity.AppointmentConfirmActivity" />
+        <activity android:name=".activity.AppointmentSummaryActivity" />
+        <activity android:name=".activity.MyWalletActivity" />
+        <activity android:name=".activity.AppointmentActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.NewAppointmentActivity" />
+        <activity android:name=".activity.StartConsultActivity" />
+        <activity android:name=".activity.VerificationActivity" />
+        <activity android:name=".activity.PersonalInfoActivity" />
+        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.LogInActivity" />
+        <activity android:name=".activity.HomeActivity" />
+        <activity android:name=".activity.WelcomeActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
